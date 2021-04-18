@@ -1,0 +1,13 @@
+C:\C# Assignment2\ProductCatalog\ProductCatalog\bin\Debug\netcoreapp3.1\ProductCatalog.exe
+C:\C# Assignment2\ProductCatalog\ProductCatalog\bin\Debug\netcoreapp3.1\ProductCatalog.deps.json
+C:\C# Assignment2\ProductCatalog\ProductCatalog\bin\Debug\netcoreapp3.1\ProductCatalog.runtimeconfig.json
+C:\C# Assignment2\ProductCatalog\ProductCatalog\bin\Debug\netcoreapp3.1\ProductCatalog.runtimeconfig.dev.json
+C:\C# Assignment2\ProductCatalog\ProductCatalog\bin\Debug\netcoreapp3.1\ProductCatalog.dll
+C:\C# Assignment2\ProductCatalog\ProductCatalog\bin\Debug\netcoreapp3.1\ProductCatalog.pdb
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.csprojAssemblyReference.cache
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.AssemblyInfoInputs.cache
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.AssemblyInfo.cs
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.csproj.CoreCompileInputs.cache
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.dll
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.pdb
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.genruntimeconfig.cache
