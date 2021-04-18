@@ -51,16 +51,14 @@ namespace ProductCatalog
             }
         }
         public void AddProduct() {
-            Product newProduct = new Product();
             Console.WriteLine("\nEnter Details of Product:\n");
-            Console.WriteLine($"ID : {newProduct.ID}");
+            Console.WriteLine($"ID : {Product.autoIncreamentor + 1}");
             Console.WriteLine("Enter the Name:");
             string name = Console.ReadLine();
             Console.WriteLine("Enter the Manufacturer:");
             string manufacturer = Console.ReadLine();
             Console.WriteLine("Enter the ShortCode:");
             string shortCode = Console.ReadLine();
-            newProduct.AddCategories();
             Console.WriteLine("Enter the Description:");
             string description = Console.ReadLine();
             Console.WriteLine("Enter the Selling Price:");
@@ -81,6 +79,8 @@ namespace ProductCatalog
                 Console.ReadKey();
                 return;
             }
+            Product newProduct = new Product();
+            newProduct.AddCategories();
             newProduct.Name = name;
             newProduct.Manufacturer = manufacturer;
             newProduct.ShortCode = shortCode;

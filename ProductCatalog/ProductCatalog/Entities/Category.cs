@@ -7,7 +7,7 @@ namespace ProductCatalog.Entities
 {
     public class Category
     {
-        private static int autoIncreamentor = 0;
+        public static int autoIncreamentor = 0;
         public int ID { get; }
         public Category()
         {

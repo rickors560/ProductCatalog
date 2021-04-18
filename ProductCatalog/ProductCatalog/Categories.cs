@@ -52,9 +52,8 @@ namespace ProductCatalog
             }
         }
         public void AddCategory() {
-            Category newCategory = new Category();
             Console.WriteLine("\nEnter Details of Category:\n");
-            Console.WriteLine($"Category ID : {newCategory.ID}");
+            Console.WriteLine($"Category ID : {Category.autoIncreamentor + 1}");
             Console.WriteLine("Enter the Category Name:");
             string name = Console.ReadLine();
             Console.WriteLine("Enter the Category ShortCode:");
@@ -79,6 +78,7 @@ namespace ProductCatalog
                 Console.ReadKey();
                 return;
             }
+            Category newCategory = new Category();
             newCategory.Name = name;
             newCategory.ShortCode = shortCode;
             newCategory.Description = description;
