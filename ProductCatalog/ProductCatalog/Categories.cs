@@ -12,7 +12,20 @@ namespace ProductCatalog
         public HashSet<string> CategoryShortCodes { get; set; }
         public Categories()
         {
-            this.CategoryList = new List<Category>();
+            this.CategoryList = new List<Category>() {
+                new Category
+                {
+                    Name = "Technology",
+                    ShortCode = "Tech",
+                    Description = "Some Technical Products"
+                },
+                new Category
+                { 
+                    Name = "Food",
+                    ShortCode = "Food",
+                    Description = "Food products"
+                }
+            };
             this.CategoryShortCodes = new HashSet<string>();
         }
         public void ShowCategoryCatalog() {
@@ -86,7 +99,7 @@ namespace ProductCatalog
             this.CategoryList.Add(newCategory);
         }
         public void DisplayCategories() {
-            Console.WriteLine("Categories:\n\n");
+            Console.WriteLine("Categories:\n");
             this.CategoryList.ForEach(category =>
             {
                 Console.WriteLine(category);

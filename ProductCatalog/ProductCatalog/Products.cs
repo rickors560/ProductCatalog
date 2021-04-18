@@ -91,7 +91,7 @@ namespace ProductCatalog
         }
         public void DisplayProducts()
         {
-            Console.WriteLine("\nProducts:\n\n");
+            Console.WriteLine("\nProducts:\n");
             this.ProductList.ForEach(product =>
             {
                 Console.WriteLine(product);

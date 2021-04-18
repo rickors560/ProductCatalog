@@ -25,11 +25,11 @@ namespace ProductCatalog.Entities
             bool exit = false;
             while (!exit) {
                 Console.WriteLine("---------------------" +
-                    "\n\ta. Add a Category to Product");
-                Console.WriteLine("\tb. Exit\n");
+                    $"\n\ta. Add a Category to Product {this.Name}");
+                Console.WriteLine("\tb. Done\n");
                 switch (Console.ReadLine().ToLower()) {
                     case "a":
-                        Console.WriteLine("Choose a Category by ID");
+                        Console.WriteLine("\nChoose a Category by ID");
                         Catalog.Categories.DisplayCategories();
                         int id; Int32.TryParse(Console.ReadLine(), out id);
                         try
@@ -61,7 +61,7 @@ namespace ProductCatalog.Entities
             });
             return $"\nID: {this.ID}\nName: {this.Name}" +
                 $"\nManufacturer: {this.Manufacturer}\nShortCode: {this.ShortCode}" +
-                $"\nCategories: {productCategories}" +
+                $"\nCategories: {productCategories.Substring(0,productCategories.Length-2)}" +
                 $"\nSellingPrice: $ {this.SellingPrice}";
         }
     }
