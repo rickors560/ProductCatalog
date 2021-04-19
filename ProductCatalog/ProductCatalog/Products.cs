@@ -19,7 +19,7 @@ namespace ProductCatalog
         {
             bool exit = false;
             while (!exit) {
-                Console.WriteLine("\n\t\t-------------------Product Catelog-------------------\n");
+                Console.WriteLine("\n\t\t-------------------Product Catalog-------------------\n");
                 Console.WriteLine("\na. Add a Product");
                 Console.WriteLine("b. List all Products");
                 Console.WriteLine("c. Delete a Product");

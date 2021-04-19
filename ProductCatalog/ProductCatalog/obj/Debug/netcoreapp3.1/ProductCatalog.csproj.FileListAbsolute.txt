@@ -10,3 +10,4 @@ C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductC
 C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.dll
 C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.pdb
 C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.genruntimeconfig.cache
+C:\C# Assignment2\ProductCatalog\ProductCatalog\obj\Debug\netcoreapp3.1\ProductCatalog.csprojAssemblyReference.cache

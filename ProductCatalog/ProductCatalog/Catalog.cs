@@ -43,39 +43,5 @@ namespace ProductCatalog
                 Console.Clear();
             }
         }
-        public void ShowCatagoryCatalog() {
-            
-            bool exit = false;
-            while (!exit) {
-                Console.WriteLine("\na. Enter a Category");
-                Console.WriteLine("b. List all Categories");
-                Console.WriteLine("c. Delete a Category");
-                Console.WriteLine("d. Search a Category");
-                Console.WriteLine("e. Back to MainMenu\n");
-                switch (Console.ReadLine().ToLower())
-                {
-                    case "a":
-                        
-                        break;
-                    case "b":
-                        Console.WriteLine("category b");
-                        break;
-                    case "c":
-                        Console.WriteLine("category c");
-                        break;
-                    case "d":
-                        Console.WriteLine("category d");
-                        break;
-                    case "e":
-                        Console.WriteLine("category e");
-                        break;
-                    default:
-                        Console.WriteLine("\nInvalid option\n");
-                        Console.ReadKey();
-                        break;
-                }
-                Console.Clear();
-            }
-        }
     }
 }

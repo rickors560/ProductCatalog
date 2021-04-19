@@ -32,7 +32,7 @@ namespace ProductCatalog
             bool exit = false;
             while (!exit)
             {
-                Console.WriteLine("\n\t\t-------------------Category Catelog-------------------\n");
+                Console.WriteLine("\n\t\t-------------------Category Catalog-------------------\n");
                 Console.WriteLine("\na. Add a Category");
                 Console.WriteLine("b. List all Categories");
                 Console.WriteLine("c. Delete a Category");
