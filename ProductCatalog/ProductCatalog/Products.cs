@@ -70,7 +70,13 @@ namespace ProductCatalog
                 Console.ReadKey();
                 return;
             }
-            if (name.Length <= 0 || manufacturer.Length <= 0 || shortCode.Length <= 0 || description.Length <= 0 || sellingPrice <= 0) {
+            if (sellingPrice < 0) {
+                Console.WriteLine("\nPrice must be greater than 0!!");
+                Console.Write("\nPress any key to continue..");
+                Console.ReadKey();
+                return;
+            }
+            if (name.Length <= 0 || manufacturer.Length <= 0 || shortCode.Length <= 0 || description.Length <= 0) {
                 Console.WriteLine("\nAll fields are mandatory!!");
                 Console.Write("\nPress any key to continue..");
                 Console.ReadKey();
