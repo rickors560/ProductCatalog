@@ -13,24 +13,25 @@ namespace ProductCatalog.Entities
         {
             autoIncreamentor++;
             ID = autoIncreamentor;
-            this.Categories = new List<Category>();
+            this.Categories = new HashSet<Category>();
         }
         public string Name { get; set; }
         public string Manufacturer { get; set; }
         public string ShortCode { get; set; }
-        public List<Category> Categories { get; set; }
+        public HashSet<Category> Categories { get; set; }
         public string Description { get; set; }
         public int SellingPrice { get; set; }
         public void AddCategories() {
             bool exit = false;
+            Console.WriteLine("---------------------");
+            Catalog.Categories.DisplayCategories();
+            Console.WriteLine($"---------------------\n\ta. Add a Category to Product {this.Name}");
+            Console.WriteLine("\tb. Done\n");
             while (!exit) {
-                Console.WriteLine("---------------------" +
-                    $"\n\ta. Add a Category to Product {this.Name}");
-                Console.WriteLine("\tb. Done\n");
+                Console.Write("Enter a Choice:");
                 switch (Console.ReadLine().ToLower()) {
                     case "a":
-                        Console.WriteLine("\nChoose a Category by ID");
-                        Catalog.Categories.DisplayCategories();
+                        Console.Write("\n\tChoose a Category by ID:");
                         int id; Int32.TryParse(Console.ReadLine(), out id);
                         try
                         {
@@ -47,6 +48,7 @@ namespace ProductCatalog.Entities
                         break;
                     default:
                         Console.WriteLine("\tInvalid option");
+                        Console.Write("\nPress any key to continue..");
                         Console.ReadKey();
                         break;
                 }
@@ -55,10 +57,10 @@ namespace ProductCatalog.Entities
         public override string ToString()
         {
             string productCategories = "";
-            this.Categories.ForEach(c =>
+            foreach(Category category in this.Categories)
             {
-                productCategories += c.Name + ", ";
-            });
+                productCategories += category.Name + ", ";
+            }
             return $"\nID: {this.ID}\nName: {this.Name}" +
                 $"\nManufacturer: {this.Manufacturer}\nShortCode: {this.ShortCode}" +
                 $"\nCategories: {productCategories.Substring(0,productCategories.Length-2)}" +

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace ProductCatalog
 {
@@ -34,9 +35,11 @@ namespace ProductCatalog
                     case "c":
                         exit = true;
                         Console.WriteLine("\nExiting\n");
+                        Thread.Sleep(1000);
                         break;
                     default:
                         Console.WriteLine("\nInvalid option!!\n");
+                        Console.Write("\nPress any key to continue..");
                         Console.ReadKey();
                         break;
                 }

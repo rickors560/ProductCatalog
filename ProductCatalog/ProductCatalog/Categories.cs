@@ -45,6 +45,7 @@ namespace ProductCatalog
                         break;
                     case "b":
                         this.DisplayCategories();
+                        Console.Write("\nPress any key to continue..");
                         Console.ReadKey();
                         break;
                     case "c":
@@ -58,6 +59,7 @@ namespace ProductCatalog
                         break;
                     default:
                         Console.WriteLine("Invalid option!!");
+                        Console.Write("\nPress any key to continue..");
                         Console.ReadKey();
                         break;
                 }
@@ -76,18 +78,21 @@ namespace ProductCatalog
             if (name.Length <= 0 ||shortCode.Length <= 0 || description.Length <= 0)
             {
                 Console.WriteLine("\nAll fields are mandatory!!");
+                Console.Write("\nPress any key to continue..");
                 Console.ReadKey();
                 return;
             }
             if (shortCode.Length > 4)
             {
                 Console.WriteLine("\nShortCode length must be 0 to 4!");
+                Console.Write("\nPress any key to continue..");
                 Console.ReadKey();
                 return;
             }
             if (this.CategoryShortCodes.Contains(shortCode))
             {
                 Console.WriteLine("\nShortCode Must be unique!");
+                Console.Write("\nPress any key to continue..");
                 Console.ReadKey();
                 return;
             }
@@ -99,7 +104,7 @@ namespace ProductCatalog
             this.CategoryList.Add(newCategory);
         }
         public void DisplayCategories() {
-            Console.WriteLine("Categories:\n");
+            Console.WriteLine("\nCategories:");
             this.CategoryList.ForEach(category =>
             {
                 Console.WriteLine(category);
@@ -107,8 +112,8 @@ namespace ProductCatalog
         }
         public void DeleteCategory() {
             Console.WriteLine("\na. Delete by ID");
-            Console.WriteLine("\na. Delete by ShortCode");
-            Console.WriteLine("\nc. Back");
+            Console.WriteLine("b. Delete by ShortCode");
+            Console.WriteLine("c. Back\n");
             switch (Console.ReadLine().ToLower())
             {
                 case "a":
@@ -118,11 +123,14 @@ namespace ProductCatalog
                     {
                         var x = this.CategoryList.Single(c => c.ID == id);
                         this.CategoryList.Remove(x);
+                        Console.WriteLine("Removed!!");
                     }
                     catch (System.InvalidOperationException)
                     {
                         Console.WriteLine("Not Found");
                     }
+                    Console.Write("\nPress any key to continue..");
+                    Console.ReadKey();
                     break;
                 case "b":
                     Console.WriteLine("Enter ShortCode:");
@@ -131,16 +139,20 @@ namespace ProductCatalog
                     {
                         var x = this.CategoryList.Single(c => c.ShortCode == shortcode);
                         this.CategoryList.Remove(x);
+                        Console.WriteLine("Removed!!");
                     }
                     catch (System.InvalidOperationException)
                     {
                         Console.WriteLine("Not Found");
                     }
+                    Console.Write("\nPress any key to continue..");
+                    Console.ReadKey();
                     break;
                 case "c":
                     break;
                 default:
                     Console.WriteLine("Invalid option!!");
+                    Console.Write("\nPress any key to continue..");
                     Console.ReadKey();
                     break;
             }
@@ -159,13 +171,13 @@ namespace ProductCatalog
                     {
                         var foundById = this.CategoryList.Single(category => category.ID == id);
                         Console.WriteLine(foundById);
-                        Console.ReadKey();
                     }
                     catch (System.InvalidOperationException)
                     {
                         Console.WriteLine("Not Found");
-                        Console.ReadKey();
                     }
+                    Console.Write("\nPress any key to continue..");
+                    Console.ReadKey();
                     break;
                 case "b":
                     Console.WriteLine("Enter Name:");
@@ -175,13 +187,13 @@ namespace ProductCatalog
                     {
                         Console.WriteLine("Results:\n\n");
                         foundByName.ForEach(i => Console.WriteLine(i));
-                        Console.ReadKey();
                     }
                     else
                     {
                         Console.WriteLine("Not Found");
-                        Console.ReadKey();
                     }
+                    Console.Write("\nPress any key to continue..");
+                    Console.ReadKey();
                     break;
                 case "c":
                     Console.WriteLine("Enter ShortCode:");
@@ -191,18 +203,19 @@ namespace ProductCatalog
                         var foundByShortCode = this.CategoryList.Single(category => category.ShortCode == shortcode);
                         Console.WriteLine("Results:\n\n");
                         Console.WriteLine(foundByShortCode);
-                        Console.ReadKey();
                     }
                     catch (System.InvalidOperationException)
                     {
                         Console.WriteLine("Not Found");
-                        Console.ReadKey();
                     }
+                    Console.Write("\nPress any key to continue..");
+                    Console.ReadKey();
                     break;
                 case "d":
                     break;
                 default:
                     Console.WriteLine("Invalid option!!");
+                    Console.Write("\nPress any key to continue..");
                     Console.ReadKey();
                     break;
             }
