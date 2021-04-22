@@ -146,6 +146,14 @@ namespace ProductCatalog
                     {
                         var x = this.CategoryList.Single(c => c.ShortCode == shortcode);
                         this.CategoryList.Remove(x);
+                        Catalog.Products.ProductList.ForEach(product =>
+                            {
+                                if (product.Categories.Contains(x))
+                                {
+                                    product.Categories.Remove(x);
+                                }
+                            }
+                        );
                         Console.WriteLine("Removed!!");
                     }
                     catch (System.InvalidOperationException)
