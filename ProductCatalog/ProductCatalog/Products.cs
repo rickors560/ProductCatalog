@@ -31,6 +31,7 @@ namespace ProductCatalog
                         break;
                     case "b":
                         this.DisplayProducts();
+                        Console.Write("\nPress any key to continue..");
                         Console.ReadKey();
                         break;
                     case "c":
@@ -44,6 +45,7 @@ namespace ProductCatalog
                         break;
                     default:
                         Console.WriteLine("Invalid option!!");
+                        Console.Write("\nPress any key to continue..");
                         Console.ReadKey();
                         break;
                 }

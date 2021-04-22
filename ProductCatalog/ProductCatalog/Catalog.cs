@@ -9,11 +9,10 @@ namespace ProductCatalog
     public class Catalog
     {
         public static Categories Categories { get; set; }
-        public Products Products { get; set; }
-        public Catalog()
-        {
-            Catalog.Categories = new Categories();
-            this.Products = new Products();
+        public static Products Products { get; set; }
+        static Catalog(){
+            Categories = new Categories();
+            Products = new Products();
         }
         public void ShowCatalog() {
             bool exit = false;
@@ -30,12 +29,12 @@ namespace ProductCatalog
                         break;
                     case "b":
                         Console.Clear();
-                        this.Products.ShowProductCatalog();
+                        Catalog.Products.ShowProductCatalog();
                         break;
                     case "c":
                         exit = true;
-                        Console.WriteLine("\nExiting\n");
-                        Thread.Sleep(1000);
+                        Console.WriteLine("\nExiting.............\n");
+                        Thread.Sleep(500);
                         break;
                     default:
                         Console.WriteLine("\nInvalid option!!\n");

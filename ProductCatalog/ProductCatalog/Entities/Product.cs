@@ -57,13 +57,20 @@ namespace ProductCatalog.Entities
         public override string ToString()
         {
             string productCategories = "";
-            foreach(Category category in this.Categories)
+            if (this.Categories.Count > 0) {
+                foreach (Category category in this.Categories)
+                {
+                    productCategories += category.Name + ", ";
+                }
+                productCategories = productCategories.Substring(0, productCategories.Length - 2);
+            }
+            else
             {
-                productCategories += category.Name + ", ";
+                productCategories = "None";
             }
             return $"\nID: {this.ID}\nName: {this.Name}" +
                 $"\nManufacturer: {this.Manufacturer}\nShortCode: {this.ShortCode}" +
-                $"\nCategories: {productCategories.Substring(0,productCategories.Length-2)}" +
+                $"\nCategories: {productCategories}" +
                 $"\nSellingPrice: $ {this.SellingPrice}";
         }
     }
