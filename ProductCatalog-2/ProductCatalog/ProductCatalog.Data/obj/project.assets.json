@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Assignment2 C#\\ProductCatalog - 2\\ProductCatalog\\ProductCatalog.Data\\ProductCatalog.Data.csproj",
+      "projectUniqueName": "C:\\Assignment2 C#\\ProductCatalog-2\\ProductCatalog\\ProductCatalog.Data\\ProductCatalog.Data.csproj",
       "projectName": "ProductCatalog.Data",
-      "projectPath": "C:\\Assignment2 C#\\ProductCatalog - 2\\ProductCatalog\\ProductCatalog.Data\\ProductCatalog.Data.csproj",
+      "projectPath": "C:\\Assignment2 C#\\ProductCatalog-2\\ProductCatalog\\ProductCatalog.Data\\ProductCatalog.Data.csproj",
       "packagesPath": "C:\\Users\\S S INFOTECH\\.nuget\\packages\\",
-      "outputPath": "C:\\Assignment2 C#\\ProductCatalog - 2\\ProductCatalog\\ProductCatalog.Data\\obj\\",
+      "outputPath": "C:\\Assignment2 C#\\ProductCatalog-2\\ProductCatalog\\ProductCatalog.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\S S INFOTECH\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Assignment2 C#\\ProductCatalog - 2\\ProductCatalog\\FileProcessor\\FileProcess.csproj": {
-              "projectPath": "C:\\Assignment2 C#\\ProductCatalog - 2\\ProductCatalog\\FileProcessor\\FileProcess.csproj"
+            "C:\\Assignment2 C#\\ProductCatalog-2\\ProductCatalog\\FileProcessor\\FileProcess.csproj": {
+              "projectPath": "C:\\Assignment2 C#\\ProductCatalog-2\\ProductCatalog\\FileProcessor\\FileProcess.csproj"
             }
           }
         }

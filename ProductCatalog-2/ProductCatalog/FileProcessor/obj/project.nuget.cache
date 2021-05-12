@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jHqeZbFb+UjZjmhkWipjBVAmXGmbZW7eTk5GSbcjhjnN01Iwspo97r5u9X2ZKYlBvA+5314iC3BkSBsvJaUpyQ==",
+  "dgSpecHash": "QR5TckHiv35lLEGyvV7CSRnVCyURjccY6KhOR0ftK+2f+IO981Vq30Pva0mCgkMH9iUYULzlJB4Fpk+Kl5Sj/Q==",
   "success": true,
-  "projectFilePath": "C:\\Assignment2 C#\\ProductCatalog - 2\\ProductCatalog\\FileProcessor\\FileProcess.csproj",
+  "projectFilePath": "C:\\Assignment2 C#\\ProductCatalog-2\\ProductCatalog\\FileProcessor\\FileProcess.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
