@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ProductCatalog.UI/1.0.0": {
+        "dependencies": {
+          "ProductCatalog.Data": "1.0.0"
+        },
+        "runtime": {
+          "ProductCatalog.UI.dll": {}
+        }
+      },
+      "FileProcess/1.0.0": {
+        "runtime": {
+          "FileProcess.dll": {}
+        }
+      },
+      "ProductCatalog.Data/1.0.0": {
+        "dependencies": {
+          "FileProcess": "1.0.0"
+        },
+        "runtime": {
+          "ProductCatalog.Data.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProductCatalog.UI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FileProcess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProductCatalog.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
